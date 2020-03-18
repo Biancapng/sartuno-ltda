@@ -14,7 +14,7 @@ conf t
 banner motd "ATENCAO! APENAS O DEPARTAMENTO DE TI DA EMPRESA SARTUNO LTDA. TEM A AUTORIZACAO PARA ACESSAR ESSE EQUIPAMENTO!"
 interface vlan 1
 description INTERFACE DE GERENCIAMENTO
-ip address 172.16.10.254 255.255.255.0
+ip address 172.16.15.254 255.255.255.0
 no shutdown
 exit
 interface f0/1
@@ -40,7 +40,7 @@ crypto key generate rsa general-key modulus 1024
 end
 wr
 conf t
-ip default-gateway 172.16.10.1
+ip default-gateway 172.16.15.1
 end
 wr
 conf t 
